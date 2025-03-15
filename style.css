@@ -1,11 +1,10 @@
-h1{
-    color: red;
+.main_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-p {
-    color: green;
-}
-
-li {
-    color:purple;
+.button_link button:hover {
+    cursor: pointer;
+    
 }
