@@ -1,10 +1,84 @@
+:root {
+    --main-color: #2A0A40;
+    --main-color-dark: #15061f;
+    --background-color: #0a050e;
+    --text-color: #ececec;
+    --text-color-special: #a433f0;
+    --text-color-hover: #8e23d6;
+    --gradient-color1: #5c0c92;
+    --gradient-color2: #190c92;
+    --gradient-color3: #141fb6;
+}
+
 .main_section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--main-color-dark);
+    color: var(--text-color);
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+
+    div {
+        width: 47.5%;
+
+    }
+
+    h1 {
+        color: var(--text-color-special);
+    }
+
+    h1:hover {
+        color: var(--text-color-hover);
+    }
+}
+
+.div-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+
+
+    button {
+        background-color: var(--text-color-special);
+        background-image: linear-gradient(270deg, var(--gradient-color1), var(--gradient-color2) 50%, var(--gradient-color3));
+        color: var(--text-color);
+        font-weight: 700;
+        font-size: 16px;
+        border: 3px;
+        border-radius: 5px;
+        padding: 10px;
+
+        span {
+            background-color: var(--main-color-dark);
+            padding: 5px 10px;
+            margin: 2px;
+        }
+        
+    }
+
+    button:hover span {
+        background: none;
+        transition: 300ms;
+    }
+}
+
+.div-image {
+    display: flex;
+
+    img {
+        width: 100%;
+    }
 }
 
 .button_link button:hover {
     cursor: pointer;
-    
+}
+
+
+body {
+    background-color: var(--background-color);
 }
