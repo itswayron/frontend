@@ -1,0 +1,45 @@
+.tab_form form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(201, 201, 201);
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+
+    label {
+        font-weight: bold;
+        width: 100%;
+    }
+
+    div {
+        background-color: rgb(177, 177, 177);
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+
+        button {
+            width: 48.75%;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+    .div_text_area {
+        flex-direction: column;
+
+        textarea {
+            margin: 5px 0;
+        }
+    }
+
+    input {
+        margin-left: 15px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+html {
+    color: white;
+}

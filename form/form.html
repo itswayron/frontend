@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário | Contato</title>
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="form.js"></script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td class="tab_form">
+        <form action="" method="post" onsubmit="contato.enviarFormulario(); return false;">
+          <div>
+            <label for="nome">Escreva o seu nome completo:</label>
+            <input type="text" name="nome" id="nome">
+          </div>
+          <div>
+            <label for="email">Digite o seu email:</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label for="fone">Digite o seu numero de telefone:</label>
+            <input type="text" name="fone" id="fone">
+          </div>
+          <div>
+            <label for="idade">Informe a sua idade:</label>
+            <input type="number" name="idade" id="idade">
+          </div>
+          <div>
+            <label>Qual tipo de contato preferido?:</label>
+            <div>
+              <label for="email_contato">Email</label>
+              <input type="radio" name="tp_contato" id="email_contato" value="email_contato">
+            </div>
+            <div>
+              <label for="telefone_contato">Telefone</label>
+              <input type="radio" name="tp_contato" id="telefone_contato" value="telefone_contato">
+            </div>
+            <div>
+              <label for="whatsapp_contato">Whatsapp</label>
+              <input type="radio" name="tp_contato" id="whatsapp_contato" value="whatsapp_contato">
+            </div>
+          </div>
+          <div class="div_text_area">
+            <label for="mensagem">Escreva a sua mensagem:</label>
+            <textarea rows="6" , cols="40" name="mensagem" id="mensagem"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="botao" onclick="fazerAviso()">Enviar</button>
+            <button type="reset" class="botao">Limpar</button>
+          </div>
+        </form>
+      </td>
+      <td class="tab_grid">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Número</th>
+              <th>Mensagem</th>
+              <th>Idade</th>
+              <th>Tipo de contato</th>
+              <th>Edição/Deleção</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="campo"></td>
+              <td class="campo"></td>
+              <td class="campo"></td>
+              <td class="campo"></td>
+              <td class="campo"></td>
+              <td class="campo"></td>
+              <td class="edt_del"><input type="" name="edicao" id="edicao">
+                <input type="" name="delecao" id="delecao">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <script type="text/javascript" src="./form.js">
+  </script>
+</body>
+
+</html>
